@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afficher une image</title>
+    <style>
+        #image {
+            display: none; /* Cache l'image initialement */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Appuyez sur le bouton pour voir l'image</h2>
+    
+    <!-- Bouton pour afficher l'image -->
+    <button onclick="afficherImage()">Afficher l'image</button>
+    
+    <!-- Image cachée initialement -->
+    <img id="image" src="https://cdn.shopify.com/s/files/1/0626/3501/6285/files/Gros-seins-mince-bonnet-D-respirant-fronce-seins-anti-affaissement-Boutique-de-Lingeries-et-Accessoires-Annie-59313029.webp?v=1719699888" alt="Image" />
+
+    <script>
+        function afficherImage() {
+            // Récupère l'élément de l'image
+            var img = document.getElementById("image");
+            // Change le style pour rendre l'image visible
+            img.style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
